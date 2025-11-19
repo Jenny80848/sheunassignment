@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PraRoz - Web Design & Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+        background-image: url("image/bckg.webp"); /* Replace with your image path */
+        background-size: cover; /* Optional: Adjusts image size to cover the entire element */
+        background-repeat: no-repeat; /* Optional: Prevents the image from repeating */
+        background-position: center center; /* Optional: Centers the image */
+        background-attachment: fixed; /* Optional: Makes the background image fixed during scrolling */
+    }
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: orange;
+}
+
+.logo span {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100vh - 80px);
+    padding-left: 60px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.content h1 span {
+    color: orange;
+}
+
+.content p {
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: orange;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #cc6f00;
+}
+</style>
+<body>
+     <header>
+        <div class="logo">Pra<span>Roz</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">DESIGN</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <h1>Web Design & <span>Development</span> Course</h1>
+            <p>
+                Web Design is a specialisation of the design stream. 
+                They also use HTML, CSS, WYSIWYG editing software, 
+                mark up validators etc to create design elements.
+            </p>
+            <a href="#" class="btn">JOIN US</a>
+        </div>
+    </section>
+    
+</body>
+</html>
